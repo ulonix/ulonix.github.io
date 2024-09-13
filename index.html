@@ -1,12 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola!</title>
-</head>
-<body>
-    <h1>Hello this is my website</h1>
-    <p>Added text</p>
-</body>
+    <title>Profile Personal</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+      <a href="#">My profile</a>
+      <button class="navbar-toggler" id="navbar-toggler">
+        &#9776;
+      </button>
+      <div class="navbar-menu" id="navbar-menu">
+        <a href="#">Inicio</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Contacto</a>
+      </div>
+    </nav>
+
+    <!-- Sección de perfil -->
+    <div class="container">
+      <div class="profile">
+        <img src="img/logo_transparent.png" alt="Logo" width="150">
+        <div class="profile-info">
+          <h1>Felipe Fernández</h1>
+          <p>Project engineer</p>
+          <p>Currently living in 🇯🇵 from 🇨🇱</p>
+        </div>
+      </div>
+
+      <!-- Sección de cards -->
+      <div class="cards">
+        <div class="card">
+          <h5 class="card-title">Web Applications and Web Services</h5>
+          <p class="card-text">.NET</p>
+          <p class="card-text">PHP</p>
+          <p class="card-text">Node</p>
+          <p class="card-text">AWS Cloud practicioner certified</p>
+          <p class="card-text">Apache, Linux, Docker</p>
+        </div>
+        <div class="card">
+          <h5 class="card-title">Front end experience</h5>
+          <p class="card-text">React, jQuery, Vue</p>
+        </div>
+        <div class="card">
+          <h5 class="card-title">Other technologies</h5>
+          <p class="card-text">Wordpress theme and plugin development</p>
+          <p class="card-text">Drupal CMS</p>
+        </div>
+        <div class="card">
+          <h5 class="card-title">Personal</h5>
+          <p class="card-text">Music making is my other passion</p>
+          <p class="card-text">Cats!</p>
+        </div>
+      </div>
+    </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+    <script>
+      document.getElementById('navbar-toggler').addEventListener('click', function() {
+        var menu = document.getElementById('navbar-menu');
+        menu.classList.toggle('show');
+      });
+    </script>
+  </body>
+</html>
 </html>
